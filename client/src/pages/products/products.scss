@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  // overflow: auto;
+  .products {
+    min-width: 0;
+    height: 100%;
+  }
+  .tabel {
+    // min-width: 0;
+  }
+  .dataTable {
+    object-fit: contain;
+    padding-right: 10px;
+  }
+}
+.dataTable .dataGrid {
+  background-color: aliceblue;
+}

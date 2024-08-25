@@ -1,0 +1,101 @@
+@import "../../styles/variables.scss";
+
+.outerBox {
+  align-content: center;
+
+  .quatarSalesBox {
+    // max-width: 30vw;
+    border: 3px solid $soft-bg;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px rgba(126, 189, 240, 0.3); /* Add a shadow on hover */
+    }
+    .titleBox {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      .title {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-size: 20px;
+      }
+      .totalSalesTitle {
+        display: flex;
+        gap: 10px;
+        .sales {
+          font-size: 25px;
+          font-weight: 600;
+
+          color: greenyellow;
+        }
+        .text {
+          font-size: small;
+        }
+      }
+    }
+
+    .salesList {
+      .header {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px 0 20px 0;
+        span {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: 600;
+        }
+      }
+
+      .body {
+        display: flex;
+        flex-direction: column;
+        height: 30vh;
+        overflow: auto;
+
+        border-top: 2px solid $soft-bg;
+        border-bottom: 2px solid $soft-bg;
+        .itemList {
+          padding: 10px 0 10px 0;
+          display: flex;
+          justify-content: space-between;
+
+          span {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          &:hover {
+            box-shadow: 0 0 10px rgba(126, 189, 240, 0.3); /* Add a shadow on hover */
+          }
+        }
+      }
+    }
+
+    .info {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-evenly;
+      font-weight: 700;
+      span {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.cost {
+  color: red;
+}
+.profit {
+  color: greenyellow;
+}

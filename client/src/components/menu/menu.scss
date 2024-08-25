@@ -1,0 +1,46 @@
+@import "../../styles/variables.scss";
+@import "../../styles/responsive.scss";
+
+.menu {
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    .title {
+      font-size: 12px;
+      font-weight: 200;
+      color: $soft-color;
+      text-transform: uppercase;
+
+      @include lg {
+        display: none;
+      }
+    }
+
+    .listItem {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+      border-radius: 5px;
+
+      &:hover {
+        box-shadow: 0 0 10px rgba(126, 189, 240, 0.3); /* Add a shadow on hover */
+      }
+
+      .listItemTitle {
+        @include lg {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.active {
+  box-shadow: 0 0 10px rgba(126, 189, 240, 0.3); /* Add a shadow on hover */
+  font-size: 105%;
+  font-weight: 600;
+}

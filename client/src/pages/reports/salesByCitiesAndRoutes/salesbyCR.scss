@@ -1,0 +1,87 @@
+@import "../../../styles/variables.scss";
+.salesByCR {
+  padding: 10px;
+  background-color: $main-bg;
+  width: 100%;
+  height: 80vh;
+  color: white;
+  border-radius: 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  height: 50px;
+  gap: 5px;
+  .route {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    &:hover {
+      box-shadow: 0 0 10px rgba(126, 189, 240, 0.3); /* Add a shadow on hover */
+    }
+    cursor: pointer;
+  }
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  max-height: min-content;
+  gap: 5px;
+  .city {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 0 10px rgba(126, 189, 240, 0.3); /* Add a shadow on hover */
+    }
+  }
+}
+
+.routes {
+  padding: 10px;
+  .routesHeader {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    .headerItem {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .productItem {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 5px;
+    height: 40px;
+    span {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.noProducts {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  justify-content: center;
+  font-weight: bold;
+}
